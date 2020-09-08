@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MbG-dR-Adh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPO-TB-Rfn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.69803921570000005" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Ud5-Dj-Qy1"/>
+                    </constraints>
+                </view>
+                <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUd-NS-ddO">
+                    <rect key="frame" x="0.0" y="107" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.3411764706" green="0.3803921569" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="I80-It-vRw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egU-ek-CUx" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="108" width="375" height="509"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZV-H7-3pL">
+                    <rect key="frame" x="0.0" y="616" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.3411764706" green="0.3803921569" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pQr-Rp-A6T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nZV-H7-3pL" secondAttribute="trailing" id="0Qz-t6-RRH"/>
+                <constraint firstItem="IUd-NS-ddO" firstAttribute="top" secondItem="JPO-TB-Rfn" secondAttribute="bottom" constant="37" id="0Us-75-EAc"/>
+                <constraint firstItem="egU-ek-CUx" firstAttribute="leading" secondItem="MbG-dR-Adh" secondAttribute="leading" id="0ou-Rb-YRi"/>
+                <constraint firstAttribute="bottom" secondItem="nZV-H7-3pL" secondAttribute="bottom" constant="50" id="BDT-eB-TIr"/>
+                <constraint firstItem="IUd-NS-ddO" firstAttribute="leading" secondItem="MbG-dR-Adh" secondAttribute="leading" id="C0e-UW-Jvw"/>
+                <constraint firstItem="JPO-TB-Rfn" firstAttribute="top" secondItem="MbG-dR-Adh" secondAttribute="top" id="MLX-jb-A6S"/>
+                <constraint firstItem="nZV-H7-3pL" firstAttribute="top" secondItem="egU-ek-CUx" secondAttribute="bottom" constant="-1" id="NWg-Os-Ucq"/>
+                <constraint firstAttribute="trailing" secondItem="JPO-TB-Rfn" secondAttribute="trailing" id="Z8s-2B-glW"/>
+                <constraint firstItem="egU-ek-CUx" firstAttribute="top" secondItem="IUd-NS-ddO" secondAttribute="bottom" id="dLx-pZ-tKd"/>
+                <constraint firstItem="JPO-TB-Rfn" firstAttribute="leading" secondItem="MbG-dR-Adh" secondAttribute="leading" id="ePL-by-6oy"/>
+                <constraint firstItem="nZV-H7-3pL" firstAttribute="leading" secondItem="MbG-dR-Adh" secondAttribute="leading" id="ivO-PA-Wnc"/>
+                <constraint firstAttribute="trailing" secondItem="IUd-NS-ddO" secondAttribute="trailing" id="vRo-Ot-W9R"/>
+                <constraint firstAttribute="trailing" secondItem="egU-ek-CUx" secondAttribute="trailing" id="zYv-4A-fPK"/>
+            </constraints>
+            <point key="canvasLocation" x="91.5" y="-540.5"/>
+        </view>
+    </objects>
+</document>
